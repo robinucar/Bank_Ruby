@@ -11,6 +11,7 @@ class Account
   end
   def withdraw(amount)
     @amount = amount
+    raise 'Payment Failed, your balance is 0' if balance == 0
     @balance -= @amount
   end
 end
