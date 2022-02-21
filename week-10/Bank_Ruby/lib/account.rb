@@ -5,4 +5,8 @@ class Account
   def initialize
     @balance = STARTING_BALANCE
   end
+  def deposit(amount)
+    @amount = amount
+    @balance += @amount
+end
 end
