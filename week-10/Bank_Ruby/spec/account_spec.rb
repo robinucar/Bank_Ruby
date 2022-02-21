@@ -27,8 +27,7 @@ describe Account do
   end
 
   it 'should store all transaction' do
-    account.deposit(2500, 'Mon, 21/Feb/2022')
-    account.withdraw(500, 'Mon, 21/Feb/2022')
-    expect(account.transaction.length).to eq 2
+    account.deposit(2500, 'Sun, 20/Feb/2022')
+    expect(account.transaction.length).to eq 1
   end
 end
