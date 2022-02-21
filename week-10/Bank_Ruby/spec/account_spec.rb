@@ -18,4 +18,9 @@ describe Account do
   it 'should not be able to withdraw money if balance is 0' do
     expect { account.withdraw(50) }.to raise_error('Payment Failed, your balance is 0')
   end
+
+	it 'should not be able to withdraw money if balance is less than witdraw amount' do
+		account.deposit(25)
+    expect { account.withdraw(50) }.to raise_error('Payment Failed, your balance is less than witdraw amount')
+  end
 end
