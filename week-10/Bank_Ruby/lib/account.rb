@@ -9,5 +9,8 @@ class Account
     @amount = amount
     @balance += @amount
   end
-
+  def withdraw(amount)
+    @amount = amount
+    @balance -= @amount
+  end
 end
