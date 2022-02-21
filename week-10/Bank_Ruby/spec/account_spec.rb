@@ -5,22 +5,22 @@ describe Account do
     expect(account.balance).to eq 0
   end
   it 'balance should  increase by deposit amount' do
-    account.deposit(100)
+    account.deposit(100, '20/02/2022')
     expect(account.balance).to eq 100
   end
 
   it 'balance should decrease by withdraw amount' do
-    account.deposit(100)
-    account.withdraw(25)
+    account.deposit(100, '20/02/2022')
+    account.withdraw(25, '21/02/2022')
     expect(account.balance).to eq 75
   end
 
   it 'should not be able to withdraw money if balance is 0' do
-    expect { account.withdraw(50) }.to raise_error('Payment Failed, your balance is 0')
+    expect { account.withdraw(50, '21/02/2022') }.to raise_error('Payment Failed, your balance is 0')
   end
 
-	it 'should not be able to withdraw money if balance is less than witdraw amount' do
-		account.deposit(25)
-    expect { account.withdraw(50) }.to raise_error('Payment Failed, your balance is less than witdraw amount')
+  it 'should not be able to withdraw money if balance is less than witdraw amount' do
+    account.deposit(25, '20/02/2022')
+    expect { account.withdraw(50, '20/02/2022') }.to raise_error('Payment Failed, your balance is less than witdraw amount')
   end
 end

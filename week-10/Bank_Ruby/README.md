@@ -18,7 +18,7 @@ I won't let customers withdraw if their balance is 0.
 
 As a bank,
 So that I don't lose money,
-I won't let customers withdraw if withdraw amount is more than balance amount.
+I won't let customers withdraw if balance is less than withdraw amount.
 
 
 As a bank customer,
