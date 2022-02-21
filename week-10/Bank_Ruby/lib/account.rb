@@ -12,6 +12,7 @@ class Account
   def withdraw(amount)
     @amount = amount
     raise 'Payment Failed, your balance is 0' if @balance == 0
+    raise 'Payment Failed, your balance is less than witdraw amount' if @balance < @amount
     @balance -= @amount
   end
 end
