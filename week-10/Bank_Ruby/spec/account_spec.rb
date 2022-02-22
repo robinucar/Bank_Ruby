@@ -7,6 +7,14 @@ describe Account do
     expect(account.balance).to eq 100
   end
 
+	it 'should respond to deposit' do
+		expect(account).to respond_to(:deposit).with(1..2).arguments
+	end
+
+	it 'should respond to withdraw' do
+		expect(account).to respond_to(:withdraw).with(1..2).arguments
+	end
+
   it 'balance should decrease by withdraw amount' do
     account.deposit(100, '21/Feb/2022')
     account.withdraw(25, '21/Feb/2022')
