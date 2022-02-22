@@ -5,11 +5,8 @@
         "lines": [
           1,
           1,
-          10,
+          9,
           2,
-          1,
-          1,
-          null,
           1,
           1,
           1,
@@ -124,8 +121,30 @@
           null,
           null
         ]
+      },
+      "/Users/mehmetucarucar/Desktop/makers/makers-projects/weekday-challanges/week-10/Bank_Ruby/spec/bank_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/mehmetucarucar/Desktop/makers/makers-projects/weekday-challanges/week-10/Bank_Ruby/lib/bank.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1645533278
+    "timestamp": 1645533938
   }
 }
